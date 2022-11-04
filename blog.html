@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel-Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #e5e5e9;
+        }
+
+        .carousel-item {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+
+        .ad1 {
+            background: url('./images/1.jpg') no-repeat center center;
+        }
+
+        .ad2 {
+            background: url('./images/3.jpg') no-repeat center center;
+        }
+
+        .ad3 {
+            background: url('./images/2.jpg') no-repeat center center;
+        }
+
+        .form-box {
+            width: 20rem;
+        }
+
+        #newsletter-box {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-image: url('./images/9.jpg');
+        }
+
+        footer a {
+            color: #aaaaab;
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item {
+                min-height: 12rem;
+            }
+        }
+
+        @media (min-width: 576px) {
+            .carousel-item {
+                min-height: 17rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img width="30" height="30" src="./images/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a href="#" aria-current="page" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="search" placeholder="Search" aria-label="Search" class="form-control mr-2">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="topCarousel" class="mt-3 carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#topCarousel" data-slide-to="0"></li>
+                <li data-target="#topCarousel" data-slide-to="1"></li>
+                <li data-target="#topCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item rounded ad1 active">
+                    <div class="carousel-caption text-light">
+                        <h3>Where to go on vacation?</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item rounded ad2">
+                    <div class="carousel-caption text-light">
+                        <h4>How to plan a trip?</h4>
+                        <p>Places, tickets, expenses</p>
+                        <div class="data-caption">
+                            19 March
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item rounded ad3">
+                    <div class="carousel-caption text-light">
+                        <h4>Life in a city</h4>
+                        <p>Pros and cons</p>
+                        <div class="data-caption d-none d-sm-block">
+                            15 April
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#topCarousel" type="button" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a href="#topCarousel" type="button" data-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </div>
+
+    <main class="container">
+        <div class="row mt-4">
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="./images/5.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card #1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugiat.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="./images/6.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card #2</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugiat.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-none d-md-block col-sm-6 col-md-4">
+                <div class="card">
+                    <img src="./images/7.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Card #3</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, fugiat.</p>
+                        <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mt-5 mb-5">
+
+                <div class="blog-post mt-5">
+                    <img src="https://cdn.pixabay.com/photo/2022/04/09/20/52/dresden-7122254__340.jpg" alt=""
+                        class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Example</h2>
+                    <p class="blog-post-date">4 July <a href="#">Jon</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quos explicabo quis cupiditate
+                        voluptatibus excepturi fuga quasi modi iste? Dignissimos!</p>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, fuga.</p>
+
+                    <h5>Subtitle</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus commodi eligendi aperiam odit
+                        explicabo soluta qui inventore repellendus. Fugit aliquid nesciunt omnis possimus a corrupti
+                        voluptates necessitatibus harum soluta?</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, illum!</p>
+                </div>
+
+                <div class="blog-post mt-5">
+                    <img src="https://cdn.pixabay.com/photo/2022/07/26/02/06/tea-plantation-7344887__340.jpg" alt=""
+                        class="rounded float-right w-50 ml-4 mb-4">
+                    <h2 class="blog-post-title">Example</h2>
+                    <p class="blog-post-date">4 September <a href="#">Kamil</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quos explicabo quis cupiditate
+                        voluptatibus excepturi fuga quasi modi iste? Dignissimos!</p>
+                    <hr>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, fuga.</p>
+
+                    <h5>Subtitle</h5>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde!</p>
+                    <ul>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, dolorum!</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ducimus commodi eligendi aperiam odit
+                        explicabo soluta qui inventore repellendus. Fugit aliquid nesciunt omnis possimus a corrupti
+                        voluptates necessitatibus harum soluta?</p>
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ol>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, illum!</p>
+                </div>
+
+                <!-- paginacja -->
+                <nav class="mt-5" aria-label="Paginacja strony">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a href="#" tabindex="-1" aria-disabled="true" class="page-link"> Previous</a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link active">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <!-- sidebar -->
+            <aside class="col-md-4 mt-5">
+
+                <div class="bg-light p-4 mb-3 rounded">
+                    <h4 class="font-italic">About the site</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, asperiores.</p>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="font-italic">Archives</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">January</a></li>
+                        <li><a href="#">February</a></li>
+                        <li><a href="#">March</a></li>
+                        <li><a href="#">April</a></li>
+                        <li><a href="#">May</a></li>
+                        <li><a href="#">June</a></li>
+                        <li><a href="#">July</a></li>
+                        <li><a href="#">August</a></li>
+                        <li><a href="#">September</a></li>
+                        <li><a href="#">October</a></li>
+                        <li><a href="#">November</a></li>
+                        <li><a href="#">December</a></li>
+                    </ol>
+                </div>
+
+                <div class="p-4">
+                    <h4 class="font-italic">Categories</h4>
+                    <ol class="list-unstyled">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Cooking</a></li>
+                        <li><a href="#">Hobby</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+
+        <div id="newsletter-box" class="rounded p-4 bm-3 bg-light">
+            <div class="d-flex justify-content-center aling-content-center">
+
+                <div class="form-box">
+                    <form action="" novalidate class="row g-3 needs-validation">
+
+                        <div class="col-12">
+                            <!-- <label for="#emailInput" class="for-label"></label> -->
+                            <input type="text" placeholder="Your email" class="form-control" id="emailInput" required>
+                            <div class="valid-feedback">Correct email</div>
+                            <div class="invalid-feedback">Email required</div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input required" id="agreement">
+                                <label for="agreement" class="form-check-label text-light">I agree with
+                                    regulations</label>
+                                <div class="invalid-feedback">Selection required</div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button class="btn btn-primary btn-block" type="submit"> Sing me up for the
+                                newsletter</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="mb-2 text-primary">Islands</strong>
+                        <h3>Trip</h3>
+                        <div class="mb-1 text-muted">December 1</div>
+                        <p class="card-text-mb-auto">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, assumenda!
+                        </p>
+                        <a href="#" class="stretched-link">Read more</a>
+                    </div>
+
+                    <div class="col-auto d-none d-md-block">
+                        <img src="./images/8.jpg" alt="" width="200" height="200" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="border rounded row g-0 overflow-hidden shadow-sm position-relative">
+                    <div class="col p-4 d-flex flex-column">
+                        <strong class="mb-2 text-primary">Cities</strong>
+                        <h3>Trip</h3>
+                        <div class="mb-1 text-muted">January 1</div>
+                        <p class="card-text-mb-auto">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, assumenda!
+                        </p>
+                        <a href="#" class="stretched-link">Read more</a>
+                    </div>
+
+                    <div class="col-auto d-none d-md-block">
+                        <img src="./images/10.jpg" alt="" width="200" height="200" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="text-light bg-dark mt-4">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Blog name</h5>
+                    <p>Travel</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Quick links</h5>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Regulations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <h5>Contact</h5>
+                    <p><a href="mailto:test@exaple.com">contact@exaple.com</a></p>
+                    <p>Street</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    Copyright by Blog. All rights reserved.
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+        window.onload = function () {
+            let formElements = document.querySelectorAll(".needs-validation");
+            Array.prototype.slice.call(formElements).forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                });
+            });
+        }
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
