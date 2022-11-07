@@ -2,4 +2,4 @@
 
 Template travel blog in bootstrap
 
-<img src="img.png">
+<a href="https://dkurpiel.github.io/Travel-Blog-Bootstrap/"> <img src="img.png"> </a>
